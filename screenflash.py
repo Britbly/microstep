@@ -8,9 +8,9 @@ def screenflash( flash ):
 	fullscr = Image("99999:""99999:""99999:""99999:""99999:")
 	
 	while count < flash:
-		sleep(500)
+		sleep(100)
 		display.show(fullscr)
-		sleep(500)
+		sleep(100)
 		display.clear()
 		count += 1
 	return;
@@ -21,14 +21,12 @@ while True;
 		str_times = str(times)
 		display.show(str_times)
 		sleep(500)
-		display.clear()
 
 	if button_b.is_pressed():
 		times -= 1
 		str_times = str(times)
 		display.show(str_times)
 		sleep(500)
-		display.clear()
 
 	if pin0.is_touched():
 	screenflash( flash = times )
