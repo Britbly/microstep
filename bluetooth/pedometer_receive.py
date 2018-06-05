@@ -10,7 +10,7 @@ while True:
      if income:
          intcome = int(income)
          if intcome >= 10:
-             display.scroll(income, delay=150, wait=True, loop=False, monospace=False)
+             display.scroll(income, delay=100, wait=False, loop=False, monospace=False)
              sleep(250)
              income = ""
          if intcome < 10:

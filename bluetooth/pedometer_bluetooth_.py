@@ -28,7 +28,9 @@ while True:
         
         steps = 0
         display.clear()
-        display.show("Cleared")
-        
+        display.scroll("Cleared", delay=100, wait=True, loop=False, monospace=False)
+        radio.send("0")
+        radio.off()
         display.clear()
+        sleep(500)
         
